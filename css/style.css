@@ -109,3 +109,6 @@
 .tfe-controller__arrow-right {
     grid-area: right;
 }
+
+/* For not to reload the page */
+body { overscroll-behavior: none }
