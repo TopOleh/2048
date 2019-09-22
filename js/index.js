@@ -62,7 +62,7 @@ function bindArrowActions() {
         e.preventDefault();
         var array = getCurrentMatrix();
 
-        console.log(addNumbersUp(array));
+        addNumbersUp(array);
     });
 
 
@@ -70,43 +70,42 @@ function bindArrowActions() {
         e.preventDefault();
         var array = getCurrentMatrix();
 
-        console.log(addNumbersDown(array));
+        addNumbersDown(array);
     });
 
     arrowLeft[0].addEventListener('click', function (e) {
         e.preventDefault();
         var array = getCurrentMatrix();
 
-        console.log(addNumbersLeft(array));
+        addNumbersLeft(array);
     });
 
     arrowRight[0].addEventListener('click', function (e) {
         e.preventDefault();
         var array = getCurrentMatrix();
 
-        console.log(addNumbersRight(array));
+        addNumbersRight(array);
     });
 
     document.addEventListener('keydown', function (e) {
-        e.preventDefault();
-        console.log('event', e)
         if (e.keyCode === 38) {
             var array = getCurrentMatrix();
-            console.log(addNumbersUp(array));
+            addNumbersUp(array);
         }
 
         if (e.keyCode === 40) {
             var array = getCurrentMatrix();
-            console.log(addNumbersDown(array));
+            addNumbersDown(array);
         }
 
         if (e.keyCode === 37) {
             var array = getCurrentMatrix();
+            addNumbersLeft(array);
         }
 
         if (e.keyCode === 39) {
             var array = getCurrentMatrix();
-            console.log(addNumbersRight(array));
+            addNumbersRight(array);
         }
 
     });
@@ -142,18 +141,14 @@ function touchEventsHandler() {
 
         if( Math.abs(xDiff) > Math.abs(yDiff) ) {
             if (xDiff > 0) {
-                console.log('left :');
                 addNumbersLeft(array);
             } else {
-                console.log('right :');
                 addNumbersRight(array);
             }
         } else {
             if (yDiff > 0) {
-                console.log('Up :');
                 addNumbersUp(array);
             } else {
-                console.log('down :');
                 addNumbersDown(array);
             }
         }
