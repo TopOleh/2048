@@ -1,0 +1,101 @@
+.tfe__table {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    float: left;
+}
+
+.tfe-table__column {
+    cursor: pointer;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50px;
+    height: 50px;
+}
+
+.tfe-table__column-2 {
+    background-color: #b16b5f;
+}
+
+.tfe-table__column-4 {
+    background-color: #eec75d;
+}
+
+.tfe-table__column-8 {
+    background-color: #f5642b;
+}
+
+.tfe-table__column-16 {
+    background-color: #ec2f16;
+}
+
+.tfe-table__column-32 {
+    background-color: #ff314c;
+}
+
+.tfe-table__column-64 {
+    background-color: #ff0000;
+}
+
+.tfe-table__column-128 {
+    background-color: #f1d94c;
+}
+
+.tfe-table__column-256 {
+    background-color: #fad400;
+}
+
+.tfe-table__column-512 {
+    background-color: #b8d843;
+}
+
+.tfe-table__column-1024 {
+    background-color: #4ec735;
+}
+
+.tfe-table__column-2048 {
+    background-color: #f070d0;
+}
+
+.tfe-table__column-4096 {
+    background-color: #be1ea4;
+}
+
+.tfe__controller  {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+    "left up right"
+    "left down right";
+    padding-left: 50px;
+    height: 150px;
+    width: 300px;
+}
+
+.tfe-controller__arrow {
+    cursor: pointer;
+    border: 1px solid green;
+}
+
+.tfe-controller__arrow:hover {
+    background: #e00b0b;
+}
+
+.tfe-controller__arrow-up {
+    grid-area: up;
+}
+
+.tfe-controller__arrow-down {
+    grid-area: down;
+}
+
+.tfe-controller__arrow-left {
+    grid-area: left;
+}
+
+.tfe-controller__arrow-right {
+    grid-area: right;
+}
